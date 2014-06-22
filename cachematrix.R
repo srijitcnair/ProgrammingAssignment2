@@ -47,6 +47,7 @@ cacheSolve <- function(x, ...) {
     message("Got data from cache")
     inverse
   }else{
+    message("No data in cache")
     #get the matrix
     mat <- x$get()
     #compute inverse
